@@ -167,7 +167,11 @@ return [
         /*
          * Package Service Providers...
          */
-
+        HieuLe\Active\ActiveServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
+        Yajra\DataTables\DataTablesServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -225,7 +229,14 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        /*
+         * Package Service Aliases...
+         */
+        'Active' => HieuLe\Active\Facades\Active::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
     ],
 
 ];
