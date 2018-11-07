@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default sample">
-                    <div class="panel-heading">Example Component</div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Example Sample</div>
 
                     <div class="panel-body">
-                        I'm an example component!
+                        lorem sample
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
 <script>
     export default {
         mounted() {
-            console.log('Component mounted.')
+            console.log('Sample mounted.')
         }
     }
 </script>

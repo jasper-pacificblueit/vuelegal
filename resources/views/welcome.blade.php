@@ -8,6 +8,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
+        <link href="/css/app.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
@@ -91,5 +92,12 @@
                 </div>
             </div>
         </div>
+        <div id="app">
+            <example-component></example-component>
+
+            <sample></sample>
+        </div>
+
+        <script src="/js/app.js"></script>
     </body>
 </html>
