@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/', 'HomeController@index');
+    Route::resource('user', 'UserController');
+//    Route::resource('user', 'UserController')->except(['store']);
+//    Route::get('user-store', 'UserController@store')->name('user-store');
+});
+
+
